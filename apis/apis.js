@@ -1,6 +1,6 @@
-const axios = require('./axios')
+import axios from './axios.js'
 
-const baseUrl = "http://47.113.230.184:7749/"
+const baseUrl = "http://47.113.230.184:7749"
 
 
 // 1. 手机登录(现在要求验证,暂时绕不过,请使用二维码登录)
@@ -291,6 +291,32 @@ export function gettuijiangequ(data){
 export function getmrssgjc(data){
 	return axios({	
 		url:baseUrl + '/search/default',
+		data:data
+	})
+}
+
+// 所有榜单
+// 说明 : 调用此接口,可获取所有榜单 接口地址 : /toplist
+
+// 调用例子 : /toplist
+
+export function getallbangdan(data){
+	return axios({	
+		url:baseUrl + '/toplist',
+		data:data
+	})
+}
+
+// 所有榜单内容摘要
+// 说明 : 调用此接口,可获取所有榜单内容摘要
+
+// 接口地址 : /toplist/detail
+
+// 调用例子 : /toplist/detail
+
+export function getbddetail(data){
+	return axios({	
+		url:baseUrl + '/toplist/detail',
 		data:data
 	})
 }
