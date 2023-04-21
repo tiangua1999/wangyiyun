@@ -47,6 +47,12 @@
 					"text": "发现"
 				},
 				{
+					"pagePath": "pages/gedan/gedan",
+					// "iconPath": "static/tab-my.png",
+					// "selectedIconPath": "static/tab-my-current.png",
+					"text": "歌单"
+				},
+				{
 					"pagePath": "pages/user/user",
 					// "iconPath": "static/tab-my.png",
 					// "selectedIconPath": "static/tab-my-current.png",
