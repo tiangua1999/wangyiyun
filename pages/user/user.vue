@@ -1,22 +1,19 @@
 <template>
 	<view class="box">
-	
 	</view>
 </template>
 
 <script>
-	import { gethqgdsygq } from '../../apis/apis.js'
 	export default {
 		data() {
 			return {
-				
+				arr1:[],
 			}
 		},
 		onLoad() {
 			
 		},
 		methods: {
-			
 		}
 	}
 </script>

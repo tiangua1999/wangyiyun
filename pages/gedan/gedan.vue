@@ -28,7 +28,7 @@
 			}
 		},
 		onLoad(options) {
-			console.log(options);
+
 			this.gogedan(
 				options
 			)
