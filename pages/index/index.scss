@@ -11,23 +11,25 @@
 .item {
 	display: flex;
 	
-	.item-img{
+	
+	
+}
+.item-img{
 		width: 100px;
 			height: 100px;
 		
 	}
-	
-}
 
 .item2-box{
 	display: flex;
 	flex-wrap: wrap;
-	.item2{
+	
+}
+.item2{
 		padding: 10rpx;
 		margin: 10rpx;
 		border: 1px solid rebeccapurple;
 	}
-}
 
 
 		
