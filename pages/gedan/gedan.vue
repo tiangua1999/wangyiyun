@@ -27,10 +27,10 @@
 				show:'',
 			}
 		},
-		onLoad() {
-			this.gogedan({
-				id:5001
-			})
+		onLoad(options) {
+			this.gogedan(
+				options
+			)
 		},
 		methods: {
 			async gogedan(id){
