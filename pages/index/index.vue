@@ -7,7 +7,7 @@
 	<view class="list-box">
 		<text style='margin-bottom: 10px;display: inline-block;'>榜单：</text>
 		
-		<view class='item' v-for='i in hotList'>
+		<view class='item' v-for='i in hotList' key="i">
 			<view >
 				<img @click='gogedan(i.id)' class='item-img' :src="i.coverImgUrl" alt="">
 			</view>

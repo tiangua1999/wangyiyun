@@ -10,7 +10,9 @@
 						<view class="gequ">{{item.name}}</view>
 						<view class="geshou">{{item.ar[0].name}}</view>
 					</view>
-					<view class="bf" :class="{zt:show === index}" @click="toggle(index)"></view>
+					<view class="bf" :class="{zt:show === index}" @click="toggle(index ,item.id)">
+						
+					</view>
 					
 				</li>
 			</ol>
@@ -19,11 +21,13 @@
 </template>
 
 <script>
-	import { gethqgdsygq } from '../../apis/apis.js'
+	import { gethqgdsygq,getUrl } from '../../apis/apis.js'
+	const innerAudioContext = uni.createInnerAudioContext();
 	export default {
 		data() {
 			return {
 				arr1:[],
+				arr2: '',
 				show:'',
 			}
 		},
@@ -38,13 +42,34 @@
 				let res1 = await gethqgdsygq(id)
 				console.log(res1);
 				this.arr1 = res1.data.songs
+				
 			},
-			 toggle(a) {
+			
+			async toggle(a,id) {
+				let res2 = await getUrl({id:id})
+				console.log(res2.data.data[0]);
+				this.arr2 = res2.data.data[0].url
 		 		    if (a === this.show) {
 						this.show = ''
+						innerAudioContext.autoplay = false;
+						innerAudioContext.src = '';
+						innerAudioContext.onStop(() => {
+						  console.log('停止播放');
+						});
+						
 					} else {
 						this.show = a
+						innerAudioContext.autoplay = true;
+						innerAudioContext.src = this.arr2;
+						innerAudioContext.onPlay(() => {
+						  console.log('开始播放');
+						});
 					}
+					
+					
+					
+					
+					
 		 	
 			 }
 		}
