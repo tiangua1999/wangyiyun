@@ -4,7 +4,7 @@
 	justify-content: center;
 	
 }
-.list-box{
+.list-box,.list-box2{
 	padding: 20rpx 50rpx;
 	margin-top: 20rpx;
 }
@@ -18,5 +18,16 @@
 	}
 	
 }
+
+.item2-box{
+	display: flex;
+	flex-wrap: wrap;
+	.item2{
+		padding: 10rpx;
+		margin: 10rpx;
+		border: 1px solid rebeccapurple;
+	}
+}
+
 
 		
