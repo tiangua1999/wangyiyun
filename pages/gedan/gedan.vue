@@ -51,5 +51,5 @@
 </script>
 
 <style>
-	@import './user.scss';
+	@import './gedan.scss';
 </style>

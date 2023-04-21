@@ -11,8 +11,14 @@
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
-		}
-	    ,{
+		},
+		{
+			"path": "pages/gedan/gedan",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
             "path" : "pages/seach/seach",
             "style" :                                                                                    
             {
