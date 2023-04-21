@@ -1,9 +1,5 @@
 <template>
 	<view class="box">
-<<<<<<< HEAD
-		<h5>やめて</h5>
-		<button style='width: 80%; background-color: #f5f5f5; height: 50rpx; padding-left: 10px;border-radius: 50px;' ></button>
-=======
 		<button @click='goseach' style='width: 80%; background-color: #f5f5f5; height: 50rpx; padding-left: 10px;border-radius: 50px;font-size: 12rpx;' >
 			点击搜索
 		</button>
@@ -20,7 +16,7 @@
 			</view>
 			
 		</view>
->>>>>>> 09359f1c4e1b2d2bd1845d9098795eaee300ce83
+
 	</view>
 	<view class="list-box2">
 		<text style='margin-bottom: 10px;display: inline-block;'>热门歌单：</text>
