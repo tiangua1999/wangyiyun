@@ -1,4 +1,4 @@
-module.exports=obj=>{
+const axios=obj=>{
   return new Promise((res,rej)=>{
     uni.request({
       ...obj,
@@ -11,3 +11,5 @@ module.exports=obj=>{
     })
   })
 }
+
+export default axios

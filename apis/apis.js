@@ -1,6 +1,6 @@
-const axios = require('./axios')
+import axios from './axios.js'
 
-const baseUrl = "http://47.113.230.184:7749/"
+const baseUrl = "http://47.113.230.184:7749"
 
 
 // 1. 手机登录(现在要求验证,暂时绕不过,请使用二维码登录)
