@@ -22,13 +22,13 @@
 
 <script>
 	import { gethqgdsygq,getUrl } from '../../apis/apis.js'
-	const innerAudioContext = uni.createInnerAudioContext();
+	
 	export default {
 		data() {
 			return {
 				arr1:[],
 				arr2: '',
-				show:'',
+				show:''
 			}
 		},
 		onLoad(options) {
